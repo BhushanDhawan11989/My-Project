@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhushan - Professional Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+    .profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: linear-gradient(135deg, #667eea 0%, #2c10ab 100%);
+    border: 4px solid white;
+    position: auto;
+    top: 20px;
+    left: 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+    
+
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: #f4f4f4;
+        padding: 20px;
+    }
+
+    .resume-container {
+        max-width: 850px;
+        margin: 0 auto;
+        background: white;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    .header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .header h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+
+    .header .title {
+        font-size: 1.3em;
+        margin-bottom: 20px;
+        opacity: 0.95;
+    }
+
+    .contact-info {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        flex-wrap: wrap;
+        margin-top: 15px;
+        font-size: 0.95em;
+    }
+
+    .contact-info a {
+        color: white;
+        text-decoration: none;
+        transition: opacity 0.3s;
+    }
+
+    .contact-info a:hover {
+        opacity: 0.8;
+    }
+
+    .content {
+        padding: 40px;
+    }
+
+    .section {
+        margin-bottom: 35px;
+    }
+
+    .section-title {
+        font-size: 1.5em;
+        color: #667eea;
+        margin-bottom: 15px;
+        padding-bottom: 8px;
+        border-bottom: 3px solid #667eea;
+        font-weight: 600;
+    }
+
+    .experience-item, .education-item, .project-item {
+        margin-bottom: 25px;
+    }
+
+    .item-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 8px;
+        flex-wrap: wrap;
+    }
+
+    .item-title {
+        font-size: 1.1em;
+        font-weight: 600;
+        color: #2c3e50;
+    }
+
+    .item-subtitle {
+        font-style: italic;
+        color: #555;
+        margin-bottom: 5px;
+    }
+
+    .item-date {
+        color: #666;
+        font-size: 0.9em;
+        white-space: nowrap;
+    }
+
+    .item-description {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .item-description ul {
+        margin-left: 20px;
+    }
+
+    .item-description li {
+        margin-bottom: 6px;
+        color: #444;
+    }
+
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .skill-tag {
+        background: #e8eaf6;
+        color: #667eea;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 0.9em;
+        font-weight: 500;
+    }
+
+    .summary {
+        font-size: 1.05em;
+        line-height: 1.8;
+        color: #444;
+        text-align: justify;
+    }
+
+    @media print {
+        body {
+            background: white;
+            padding: 0;
+        }
+        .resume-container {
+            box-shadow: none;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .header h1 {
+            font-size: 2em;
+        }
+        .contact-info {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .item-header {
+            flex-direction: column;
+        }
+        .content {
+            padding: 25px;
+        }
+    }
+</style>
+
+
+</head>
+<body>
+    <div class="resume-container">
+    
+        
+        <div class="header">
+            <img src="photos/bhushan.jpg" alt="Bhushan Dhavan" class="profile-photo">
+            <h1>BHUSHAN DHAVAN</h1>
+            <div class="title">Software Developer</div>
+            <div class="contact-info">
+                <span>📧 bhushandhawan199@email.com</span>
+                <span>📱 +91 7709021287</span>
+                <span>📍 Pune, Maharashtra</span>
+                <a href="https://linkedin.com/in/bhushan" target="_blank">🔗 LinkedIn</a>
+                <a href="https://github.com/bhushan" target="_blank">💻 GitHub</a>
+            </div>
+        </div>
+
+
+    <div class="content">
+        <div class="section">
+            <h2 class="section-title">Professional Summary</h2>
+            <p class="summary">
+                Passionate software developer with expertise in full-stack development and a proven track record of delivering high-quality applications. Strong problem-solving skills with experience in modern web technologies and agile methodologies. Dedicated to writing clean, maintainable code and continuously learning new technologies.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Experience</h2>
+            
+            <div class="experience-item">
+                <div class="item-header">
+                    <div class="item-title">Senior Software Developer</div>
+                    <div class="item-date">Jan 2022 - Present</div>
+                </div>
+                <div class="item-subtitle">Tech Company Name | City, State</div>
+                <div class="item-description">
+                    <ul>
+                        <li>Developed and maintained full-stack web applications using React, Node.js, and MongoDB</li>
+                        <li>Collaborated with cross-functional teams to deliver features on time and within budget</li>
+                        <li>Implemented RESTful APIs and optimized database queries, improving performance by 40%</li>
+                        <li>Mentored junior developers and conducted code reviews to maintain code quality</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <div class="item-title">Software Developer</div>
+                    <div class="item-date">Jun 2020 - Dec 2021</div>
+                </div>
+                <div class="item-subtitle">Previous Company | City, State</div>
+                <div class="item-description">
+                    <ul>
+                        <li>Built responsive web applications using HTML, CSS, JavaScript, and React</li>
+                        <li>Integrated third-party APIs and services to enhance application functionality</li>
+                        <li>Participated in agile development processes including daily standups and sprint planning</li>
+                        <li>Wrote unit tests and conducted debugging to ensure application stability</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Education</h2>
+            
+            <div class="education-item">
+                <div class="item-header">
+                    <div class="item-title">Bachelor of Technology in Computer Science</div>
+                    <div class="item-date">2016 - 2020</div>
+                </div>
+                <div class="item-subtitle">University Name | City, State</div>
+                <div class="item-description">
+                    <ul>
+                        <li>GPA: 3.8/4.0</li>
+                        <li>Relevant Coursework: Data Structures, Algorithms, Database Systems, Web Development</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Projects</h2>
+            
+            <div class="project-item">
+                <div class="item-header">
+                    <div class="item-title">E-Commerce Platform</div>
+                    <div class="item-date">2023</div>
+                </div>
+                <div class="item-description">
+                    <ul>
+                        <li>Built a full-stack e-commerce application with React, Node.js, Express, and PostgreSQL</li>
+                        <li>Implemented user authentication, shopping cart, and payment gateway integration</li>
+                        <li>Deployed on AWS with CI/CD pipeline using GitHub Actions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <div class="item-title">Task Management App</div>
+                    <div class="item-date">2022</div>
+                </div>
+                <div class="item-description">
+                    <ul>
+                        <li>Created a responsive task management application using React and Firebase</li>
+                        <li>Features include real-time updates, drag-and-drop functionality, and team collaboration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">HTML/CSS</span>
+                <span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">REST APIs</span>
+                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Agile</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
