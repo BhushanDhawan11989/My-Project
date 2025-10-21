@@ -1,0 +1,240 @@
+*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(252, 252, 252);
+        }
+        header {
+            position: relative;
+            width: 100%;
+            min-height: 450px;
+            overflow: hidden;
+        }
+
+        #bg-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 90%;
+            height: 70px;
+            margin: 0 auto;
+        }
+        nav .app_link a{
+            text-decoration: none;
+            color: #fff;
+            font-weight: 550;
+            font-size: 1.2rem;
+        }
+        nav .nav_items ul{
+            display: flex;
+            align-items: center;
+            list-style: none;
+        }
+        nav .nav_items ul li a{
+            text-decoration: none;
+            color: #fff;
+            margin: 0 20px;
+            font-size: 1.2rem;
+            font-weight: lighter;
+        }
+        .content_wrapper{
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .content_wrapper img{
+            width: 300px;
+            height: 60px;
+        }
+        .content_wrapper h1{
+            font-size: 2.2rem;
+            font-weight: 100;
+            margin: 30px 0;
+            letter-spacing: 2px;
+        }
+        .content_wrapper h1 span{
+            font-weight: 600px;
+        }
+        .search_container{
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            height: 3.2rem;
+            width: 50%;
+            border-radius: 8px;
+        }
+        .search_container .left_search, .search_container .right_search
+        {
+            display: inline-flex;
+            padding: 0 1rem;
+        }
+        .search_container .left_search{
+            width: 30%;
+            border-right: 2px solid red;
+        }
+        .search_container .right_search{
+            width: 70%;
+        }
+        .search_container input{
+            border: 0;
+            outline: none;
+            font-size: 1rem;
+            background-color: transparent;
+            color: grey;
+            width: 100%;
+            margin-left: 8px;
+        }
+        .search_container .left_search i{
+            color: rgb(172, 118, 118);
+        }
+        .search_container .right_search i{
+            color: rgb(172, 118, 118);
+        }
+        
+        /* ORDER SECTION */
+        .order-section {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .order-section .order {
+            display: flex;
+            gap: 40px;
+            flex-wrap: nowrap;
+        }
+
+        .card {
+            flex: 1;
+            min-width: 280px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            background: white;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        .card img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .card .content {
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .card .heading {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1c1c1c;
+            margin-bottom: 8px;
+        }
+
+        .card .text {
+            font-size: 14px;
+            color: #696969;
+            line-height: 1.5;
+        }
+        
+        .menu-icon{
+            color: #fff;
+            font-size: 30px;
+            display: none;
+        }
+        
+        /* COLLECTION SECTION */
+        .collections{
+            width: 30%;
+            background-color: rgb(228, 225, 225);
+            text-align: center;
+            
+        }
+        ,main{
+            
+        }
+        .collection-cards {
+    width: 100%;
+    display: inline;
+}
+
+.collection-cards .cards {
+                  /* show cards in a row */
+    flex-wrap: nowrap;          /* keep all in one line */
+              /* horizontal scroll if too many cards */
+    gap: 20px;  
+    padding-bottom: 10px;       /* small padding for scroll area */
+}
+
+.collection-cards .cards .card {
+    position: relative;
+    width: 200px;               /* ✅ fixed width for each card */
+    height: 200px;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;             /* prevent card from shrinking */
+}
+
+.collection-cards .cards .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 80px;
+    transition: transform 0.5s ease;
+}
+
+.collection-cards .cards .card:hover img {
+    transform: scale(1.1);
+}
+
+.collection-cards .cards .card .content {
+    
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 60%, transparent 100%);
+    color: rgb(0, 0, 0);
+    padding: 24px;
+}
+
+.collection-cards .cards .card .content p:first-child {
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.collection-cards .cards .card .content p:last-child {
+    font-size: 14px;
+    font-weight: 300;
+    opacity: 0.95;
+}
